@@ -9,12 +9,12 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "E.MIND"
+title                    : "E-MIND Lab"
 title_separator          : "-"
 name                     : &name "Eunju Jeong"
-description              : &description "Ewha Music Intelligence Neuroscience Design Lab"
-url                      : https://eunjujeong.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "/E.MIND" # the subpath of your site, e.g. "/blog"
+description              : &description "E.MIND (Ewah Music Intelligence Neuroscience Design Lab)는 음악의 치료적 원리 및 실제를 토대로 한 기초 및 응용연구를 수행하며, 음악의 치료적 효능과 기술의 융합을 통해 Everywhere, Everyone, Everytime 음악치료 서비스를 위한 대면 및 비대면 콘텐츠, 시스템 알고리듬 등의 결과물을 도출 및 보급을 목적으로 합니다. 현재, 정부 및 지방자치단체, 공공연구기관, 대기업 및 중소기업과의 협력을 바탕으로 미래 모빌리티 디지털 헬스케어 시스템 개발, 쾌적한 음환경 조성을 위한 스마트 사운드스케이프 시스템 개발, 뇌졸중, 파킨슨, 경도인지장애 환자의 운동 및 인지 재활을 위한 디지털 치료제 개발 및 검증 연구를 수행하고 있습니다."
+url                      : https://eunjujeong.github.io
+baseurl                  : "/E.MIND"
 repository               : "eunjujeong/E.MIND"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Eunju Jeong"
   pronouns         : # example: "she/her"  
-  bio              : "Creative Director, E.MIND Lab"
+  bio              : "Professor & Director, E-MIND Lab"
   location         : "Seoul, Republic of Korea"
   employer         : "Ewha Womans University"
   uri              : # URL
@@ -33,18 +33,18 @@ author:
 
   # Academic websites
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  arxiv            : # URL
   googlescholar    : "https://scholar.google.com/citations?user=uDnyV4sAAAAJ&hl=ko&oi=sra"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-5064-5419"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Eunju-Jeong-2?ev=hdr_xprf"
   scopus           : # URL
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
+  bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
   github           : "eunjujeong"
@@ -53,7 +53,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -62,7 +62,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/eunju-jeong-b8b46517/"
+  linkedin         : "eunju-jeong-b8b46517"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -77,6 +77,156 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+
+# EMIND Lab Research Projects
+lab_description: "E.MIND (Ewah Music Intelligence Neuroscience Design Lab)는 음악의 치료적 원리 및 실제를 토대로 한 기초 및 응용연구를 수행하며, 음악의 치료적 효능과 기술의 융합을 통해 Everywhere, Everyone, Everytime 음악치료 서비스를 위한 대면 및 비대면 콘텐츠, 시스템 알고리듬 등의 결과물을 도출 및 보급을 목적으로 합니다. 현재, 정부 및 지방자치단체, 공공연구기관, 대기업 및 중소기업과의 협력을 바탕으로 미래 모빌리티 디지털 헬스케어 시스템 개발, 쾌적한 음환경 조성을 위한 스마트 사운드스케이프 시스템 개발, 뇌졸중, 파킨슨, 경도인지장애 환자의 운동 및 인지 재활을 위한 디지털 치료제 개발 및 검증 연구를 수행하고 있습니다."
+
+research_projects:
+  project1:
+    title_ko: "멀티센서리 기술을 활용한 차량 환경에서의 숙면 테라피 솔루션 개발"
+    title_en: "Development and validation of multisensory sleep solution in vehicle"
+    funding: "현대자동차"
+    period: "2023.9 ~ 2024.8"
+    description: "현재 자율주행차량 기술의 발전은 차량 내에서 다양한 활동을 가능하게 하는 새로운 기회를 제공합니다. 이러한 기술 발전에도 불구하고, 차량 내에서의 효율적인 수면 유도는 여전히 기술적 도전 과제로 남아 있습니다. 기존의 수면 기술, 예를 들어 소음 차단, 음악 재생, 조명 조절 등은 기본적인 휴식 지원 기능을 제공하지만, 장거리 운행이나 교통이 밀집된 시간대에 차량 내에서 수면의 질을 극대화하는 데는 한계가 있습니다. 이 연구의 목적은 청각과 촉각 자극이 수면의 질을 개선할 수 있다는 과학적 근거에 기반하여, 차량 내에서 음악 기반의 감성 진동을 활용한 수면 유도 기술을 개발하는 것입니다. 또한, 차량 내 제공되는 음악 및 진동 콘텐츠가 수면의 주관적 경험과 생체신호 반응에 미치는 효과를 검증하고자 합니다. 본 연구를 통해 개발된 음악 기반 콘텐츠와 기술은 차량 내 수면 환경을 최적화하고, 장거리 여행 중이거나 교통 혼잡 시간에도 사용자가 효과적이고 질 높은 수면을 경험할 수 있도록 합니다. 나아가 다양한 환경에서 휴식과 수면을 증진할 수 있는 디지털 헬스케어 혁신적인 솔루션으로 활용 가능합니다."
+  
+  project2:
+    title_ko: "개인공간 소음 문제 해결을 위한 소음 시뮬레이션기반 개인 맞춤형 소음 완화 기술 및 서비스 개발"
+    title_en: "Development of personalized noise mitigation technology and service based on noise simulation to solve the noise problem in personal space"
+    funding: "한국산업기술기획평가원"
+    period: "2023.4 ~ 2025.12"
+    description: "본 과제는 주거와 업무 공간을 망라한 개인 공간에서의 소음 스트레스 완화를 위한 사운드 마스킹 스케이프 시스템 개발을 목표로 합니다. 이를 위해 사용자 소음 민감도 및 스트레스에 대한 다차원 평가를 통한 유형화, 소음원 마스킹을 위한 앰비언스 사운드 음원 개발, 공간 특성 별 사용 목적에 부합하는 사운드 스케이프 음원 개발을 수행하고, 이를 기반으로 개인 맞춤형 소음 관리 서비스를 최종 개발하여 소음 스트레스 저감 효과성을 검증합니다."
+
+  project3:
+    title_ko: "경도인지장애를 위한 가상현실 기반 음악-신경 인지재활 콘텐츠 개발 및 임상효과 검증"
+    title_en: "Development and validation of immersive music-based neurocognitive training for mild cognitive impairments"
+    funding: "이화여대 신임교원지원사업"
+    period: "2023.3 ~ 2025.2"
+    description: "경도인지장애 (Mild Cognitive Impairment)는 알츠하이머 질환으로 이행될 수 있는 중요한 중간 단계로, 조기 선별 및 개입이 중요합니다. 최근 가상현실 기반 음악 훈련이 인지와 운동 기능 강화에 효과적임이 밝혀졌으나, MCI 세부 아형에 부합하는 체계적인 음악기반 훈련 프로토콜이 부재한 상황입니다. 따라서, 이 연구의 목적은 MCI 환자를 대상으로 가상현실을 이용한 음악 기반 신경 인지 재활 프로그램의 개발 및 그 효과를 검증하는 것입니다. 가상현실은 MCI 환자들이 집에서도 훈련 (Home-based rehabilitation)을 수행할 수 있게 하여, 기존의 재활 방법들보다 보급성과 접근성이 뛰어나다는 장점을 가지고 있습니다. 이는 기존의 재활 방법들을 보완하거나 대체할 수 있는 혁신적인 접근법으로, 경도인지장애 환자들의 삶의 질을 개선하고 장기적인 건강 유지에 기여할 수 있습니다."
+
+  project4:
+    title_ko: "사용자 환경, 개인 성향별 음원 구축을 위한 사운드 스케이프 음악 컨텐츠 개발"
+    title_en: "Development of soundscape contents for everywhere, everyone and every moment"
+    funding: "현대자동차"
+    period: "2022.9 ~ 2023.8"
+    description: "차량, 주거공간, Office 등 일상 공간에서의 경험을 향상시킬 수 있는 일관성있는 청각 경험 (seamless soundscape UX)에 대한 수요가 증가함에 따라, 효과적인 청각 경험을 제공하기 위한 플랫폼 개발, 운영 시스템 구축 및 콘텐츠 개발의 필요성이 제기되고 있습니다. 따라서 본 과제는 다양한 환경 및 사용자 성향에 따른 사운드 스케이프 요인과 인덱스를 분석하고 도출함으로써, 사용자 환경, 목적 및 개인 성향에 맞춤화된 사운드 스케이프 콘텐츠를 개발하고자 합니다."
+
+  project5:
+    title_ko: "자폐 범주성 장애의 내수용/외수용 감각 신경 매커니즘 규명 및 통합 촉진을 위한 BCI 기반 진동음향 리듬 콘텐츠 개발"
+    title_en: "Listening to the body rhythm: vibroacoustic rhythm for interoceptive and exteroceptive integration in autism spectrum disorder"
+    funding: "한국연구재단 이공분야기초연구사업"
+    period: "2020.6 ~ 2023.2"
+    description: "자폐 범주성 장애(ASD) 아동은 외부 감각 정보의 통합과 자아 인식에 어려움을 겪어, 타인의 존재 인식 및 타인과의 상호 작용에 결함을 보입니다. 본 과제는 본질적으로 일정한 주기를 가지는 내부 자율신경반응과 외부 환경 자극과의 동기화가 신체 및 자기 인식에 영향을 미친다는 점을 활용하여, 내/외수용 감각 간 통합을 촉진할 수 있는 BCI 기반 진동 음향 리듬 콘텐츠를 개발하고자 합니다. 이를 통해 ASD의 사회인지 조기 진단 및 재활에 대한 새로운 솔루션을 제시하고자 합니다."
+
+  project6:
+    title_ko: "뇌신호 해독을 통한 BCI-Musicing시스템 개발"
+    title_en: "Decoding inner music using electrocorticography"
+    funding: "삼성전자"
+    period: "2019.12 ~ 2023.5"
+    description: "본 과제는 중증 뇌병변 환자들이 직면하는 표현 예술 활동 참여 및 재활 훈련 기회 부족을 해결하고, 이들의 잔존 기능(intact function)을 통해 자발적으로 예술적 감각 및 표현 참여를 촉진할 수 있는 대안 인터페이스를 개발하고자 합니다. 'Musicing BCI' 시스템은 마음 속 음악 소리(Inner Music)를 뇌신호로 탐지 및 해독하고 이를 음악으로 구현하여, 중증 뇌병변 환자들의 예술 표현 참여 및 재활 훈련의 일환으로 활용할 수 있는 새로운 시스템을 제안합니다."
+
+# Publications (Selected Recent)
+publications:
+  2025:
+    - title: "The Effects of Music Listening on Stress Reduction and Relaxation Among Parents of Children with Developmental Disabilities in a Waiting Area: The Role of Musical Experience and Personality Type"
+      authors: "Kim, W., & Jeong. E."
+      journal: "부모교육연구, 22(2), 173-198"
+      title_ko: "발달장애 아동 부모의 스트레스 완화 및 긴장 이완을 위한 치료 대기 공간 내 음악 감상 효과- 음악 경험과 성격 유형에 따른 분석"
+      authors_ko: "김원지 and 정은주"
+      journal_ko: "Journal of Parent Education, 22(2), 173-198"
+    
+    - title: "Influence of vehicle expertise on acceleration profile preferences in electric vehicles"
+      authors: "Kim S, Yang J, Jeong E"
+      journal: "PLOS ONE 20(6): e0325331"
+    
+    - title: "Development and validation of a music based soundscape for wellness enhancement in nature environments"
+      authors: "Kang, Y-S., & Jeong, E."
+      journal: "The Journal of the Acoustical Society of Korea, 44(3), 281-293"
+      title_ko: "치유적 음환경 조성을 위한 음악 기반 사운드스케이프 개발 및 검증"
+      authors_ko: "강예신 and 정은주"
+      journal_ko: "한국음향학회지, 44(3), 281-293"
+
+  2024:
+    - title: "Virtual reality-based music attention training for acquired brain injury: A randomized crossover study"
+      authors: "Jeong E, Ham Y, Lee SJ, Shin JH"
+      journal: "Annals of the New York Academy of Science, 1541(1), 151-162"
+    
+    - title: "A Scoping Review of Music-Integrated Digital Therapeutics for Mild Cognitive Impairment"
+      authors: "Ko, H-E, & Jeong, E."
+      journal: "Korean Journal of Arts Therapy, 45(3), 69-99"
+      title_ko: "경도인지장애를 위한 음악융합 디지털 치료제에 대한 주제범위 문헌고찰"
+      authors_ko: "고하은 and 정은주"
+      journal_ko: "한국예술치료학회지, 24(3), 69-99"
+    
+    - title: "Measurements of physiological responses to noise-induced stress: A scoping review"
+      authors: "Cheon, J., Hong, Y. J., Shin, H. J., & Jeong, E."
+      journal: "The Journal of the Acoustical Society of Korea, 43(6), 686-700"
+    
+    - title: "A Scoping Review of the Use of Auditory Stimulation in Digitalized Cognitive Rehabilitation for Acquired Brain Injury"
+      authors: "Park, M. J., & Jeong, E."
+      journal: "The Journal of the Korea Contents Association, 24(7), 94-107"
+      title_ko: "후천성 뇌손상 환자를 위한 디지털 기술 기반 인지재활에서 청각자극의 활용에 대한 주제범위 문헌고찰"
+      authors_ko: "박민지 and 정은주"
+      journal_ko: "한국콘텐츠학회 논문지, 24(7), 94-107"
+
+  2023:
+    - title: "Virtual reality-based music attention training for acquired brain injury: A protocol for randomized cross-over trial"
+      authors: "Shin, J-H, & Jeong, E."
+      journal: "Frontiers in Neurology. 14:1192181. DOI: 10.3389/fneur.2023.1192181"
+    
+    - title: "Rhythm-based assessment and training for children with attention deficit hyperactivity disorder: A feasibility study protocol"
+      authors: "Shin, H-J., Lee, H., Kang, D., Kim, J. I., & Jeong, E."
+      journal: "Frontiers in Human Neuroscience. 17:1190736. DOI: 10.3389/fneur.2023.1192181"
+    
+    - title: "Decoding imagined musical pitch from human scalp electroencephalograms"
+      authors: "Chung, M., Kim, T., Jeong, E., et al."
+      journal: "IEEE Transactions on Neural Systems and Rehabilitation Engineering, doi: 10.1109/TNSRE.2023.3270175"
+    
+    - title: "Cortical representation of musical pitch in event-related potentials"
+      authors: "Kim, T., Chung, M., Jeong, E. et al."
+      journal: "Biomedical Engineering Letters, https://doi.org/10.1007/s13534-023-00274-y"
+
+  2022:
+    - title: "Criterion-related validation of a music-based attention assessment for individuals with traumatic brain injury"
+      authors: "Jeong, E., & Ireland, S."
+      journal: "International Journal of Environmental Research and Public Health, 19, 16285. doi.org/10.3390/ijerph192316285"
+    
+    - title: "The Effect of Online Song Psychotherapy on Stress, Self-efficacy, and Career Maturity of Job Seekers"
+      authors: "Kim, S-H., & Jeong, E."
+      journal: "Journal of Korea Entertainment Industry Association ,16(4), 305-316"
+      title_ko: "비대면 노래심리치료가 취업준비생의 스트레스와 자기효능감, 진로성숙도에 미치는 영향"
+      authors_ko: "김승하 and 정은주"
+      journal_ko: "한국엔터테인먼트산업학회논문지, 16(4), 305-316"
+
+# Patents
+patents:
+  2024:
+    - patent_no: "10-2024-0077765"
+      title: "인지기능 훈련을 위한 리듬 패턴을 제공하는 방법 및 전자 장치"
+    
+    - patent_no: "PCT/KR2024/005518"
+      title: "생체 신호에 기초하여 판단된 사용자 상태에 따라 수면 유도 음악을 제공하는 방법 및 전자 디바이스"
+
+  2023:
+    - patent_no: "18/194,690 미국"
+      title: "METHOD AND ELECTRONIC DEVICE FOR MATCHING MUSICAL IMAGINARY ELECTROENCEPHALOGRAM WITH MUSICAL PITCH VALUES"
+
+  2022:
+    - patent_no: "10-2022-0082544"
+      title: "멀티센서리 인덱스 시스템 및 그 작동 방법"
+    
+    - patent_no: "10-2022-0082545"
+      title: "감성 케어 장치 및 방법"
+    
+    - patent_no: "10-2022-0041353"
+      title: "음악 상상 뇌전도를 멜로디와 매칭시키는 방법 및 전자  장치"
+
+  2021:
+    - patent_no: "10-2021-0118765"
+      title: "가상 악기 연주를 이용하는 인지 기능 훈련 장치 및 방법"
+
+  2018:
+    - patent_no: "10-1896193"
+      title: "이미지를 음악으로 변환하는 방법(METHOD FOR CONVERTING IMAGE INTO MUSIC)"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
