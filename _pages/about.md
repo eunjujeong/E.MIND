@@ -1,56 +1,51 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "E-MIND Lab: Ewha Music Intelligence Neuroscience Design Lab"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+E-MIND (Ewha Music Intelligence Neuroscience Design Lab)는 음악의 치료적 원리 및 실제를 토대로 한 기초 및 응용연구를 수행하며, 음악의 치료적 효능과 기술의 융합을 통해 Everywhere, Everyone, Everytime 음악치료 서비스를 위한 대면 및 비대면 콘텐츠, 시스템 알고리듬 등의 결과물을 도출 및 보급을 목적으로 합니다. 현재, 정부 및 지방자치단체, 공공연구기관, 대기업 및 중소기업과의 협력을 바탕으로 미래 모빌리티 디지털 헬스케어 시스템 개발, 쾌적한 음환경 조성을 위한 스마트 사운드스케이프 시스템 개발, 뇌졸중, 파킨슨, 경도인지장애 환자의 운동 및 인지 재활을 위한 디지털 치료제 개발 및 검증 연구를 수행하고 있습니다.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Our mission is to develop and disseminate evidence-based music therapy services through the convergence of therapeutic music principles and advanced technologies, making music therapy accessible Everywhere, Everyone, Everytime.
 
-A data-driven personal website
+Research Philosophy
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+E-MIND Lab conducts fundamental and applied research based on therapeutic principles and practices of music. Our interdisciplinary approach combines neuroscience, music therapy, digital healthcare, and advanced technologies to create innovative solutions for cognitive rehabilitation, wellness enhancement, and therapeutic intervention.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
+Current Research Areas
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Our laboratory focuses on three primary research domains that leverage the therapeutic potential of music through technological innovation:
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**Future Mobility Digital Healthcare Systems**
+We develop comprehensive digital healthcare solutions for automotive environments, including sleep therapy systems, emotional care solutions, and multisensory technologies that enhance well-being during transportation.
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+**Smart Soundscape Systems**
+Our team creates intelligent acoustic environments that promote wellness and stress reduction through personalized soundscape interventions, noise mitigation technologies, and adaptive audio systems for various living and working spaces.
 
-**Markdown generator**
+**Digital Therapeutics for Neurological Rehabilitation** 
+We design and validate digital therapeutic interventions for patients with stroke, Parkinson's disease, and mild cognitive impairment, utilizing virtual reality, brain-computer interfaces, and music-based cognitive training systems.
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+Collaborative Research Network
+======
+E-MIND Lab maintains active collaborations with government agencies, local governments, public research institutions, and both large and small enterprises. These partnerships enable us to translate our research findings into practical applications and ensure that our innovations reach those who need them most.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+Our collaborative approach allows us to:
+- Conduct large-scale clinical trials and validation studies
+- Develop commercially viable therapeutic products
+- Create evidence-based intervention protocols
+- Establish standardized assessment tools for clinical practice
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+Technology Integration
+======
+We leverage cutting-edge technologies to advance music therapy research and applications:
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+- **Brain-Computer Interfaces (BCI)** for decoding musical imagination and intention
+- **Virtual and Augmented Reality** for immersive therapeutic experiences
+- **Artificial Intelligence** for personalized intervention design
+- **Biosignal Processing** for real-time physiological monitoring
+- **Mobile Health Technologies** for accessible intervention delivery
+
+For more information about our specific research projects, publications, and team members, please explore the navigation menu above.
