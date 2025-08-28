@@ -6,21 +6,18 @@
 #
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
-
 main:
-   - title: "About"
+  - title: "About"
     url: /about/
     
   - title: "People"
-    url: /Director/
     url: /members/
-
-    - title: "Projects"
+    
+  - title: "Projects"
     url: /projects/
     
-    - title: "Publications"
+  - title: "Publications"
     url: /publications/
     
   - title: "News"
     url: /news/
-    
