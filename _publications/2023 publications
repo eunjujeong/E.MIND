@@ -1,0 +1,44 @@
+---
+title: "Cortical representation of musical pitch in event-related potentials"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-04-01-cortical-musical-pitch-erp
+excerpt: 'Neural coding of auditory stimulus frequency is well-documented; however, the cortical signals and perceptual correlates of pitch have not yet been comprehensively investigated. This study examined the temporal patterns of event-related potentials (ERP) in response to single tones of pitch chroma, with an assumption that these patterns would be more prominent in musically-trained individuals than in non-musically-trained individuals. Participants with and without musical training (N = 20) were presented with seven notes on the C major scale (C4, D4, E4, F4, G4, A4, and B4), and whole-brain activities were recorded. A linear regression analysis between the ERP amplitude and the seven notes showed that the ERP amplitude increased or decreased as the frequency of the pitch increased. Remarkably, these linear correlations were anti-symmetric between the hemispheres. Specifically, we found that ERP amplitudes of the left and right frontotemporal areas decreased and increased, respectively, as the pitch frequency increased. Although linear slopes were significant in both groups, the musically-trained group exhibited marginally steeper slope, and their ERP amplitudes were most discriminant for frequency of tone of pitch at earlier latency than in the non-musically-trained group (~ 460 ms vs ~ 630 ms after stimulus onset). Thus, the ERP amplitudes in frontotemporal areas varied according to the pitch frequency, with the musically-trained participants demonstrating a wider range of amplitudes and inter-hemispheric anti-symmetric patterns. Our findings may provide new insights on cortical processing of musical pitch, revealing anti-symmetric processing of musical pitch between hemispheres, which appears to be more pronounced in musically-trained people.'
+date: 2023-04-13
+paperurl: 'https://doi.org/10.1007/s13534-023-00274-y'
+citation: 'Kim, T., Chung, M., Jeong, E. et al. (2023). &quot;Cortical representation of musical pitch in event-related potentials.&quot; <i>Biomedical Engineering Letters</i>.'
+---
+---
+title: "Decoding imagined musical pitch from human scalp electroencephalograms"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-03-01-musical-pitch-eeg-decoding
+excerpt: 'Brain-computer interfaces (BCIs) can restore impaired cognitive functions in people with neurological disorders such as stroke. Musical ability is a cognitive function that is correlated with non-musical cognitive functions, and restoring it can enhance other cognitive functions. Pitch sense is the most relevant function to musical ability according to previous studies of amusia, and thus decoding pitch information is crucial for BCIs to be able to restore musical ability. This study evaluated the feasibility of decoding pitch imagery information directly from human electroencephalography (EEG). Twenty participants performed a random imagery task with seven musical pitches (C4-B4). We used two approaches to explore EEG features of pitch imagery: multiband spectral power at individual channels (IC) and differences between bilaterally symmetric channels (DC). The selected spectral power features revealed remarkable contrasts between left and right hemispheres, low- (< 13 Hz) and high-frequency ( 13 Hz) bands, and frontal and parietal areas. We classified two EEG feature sets, IC and DC, into seven pitch classes using five types of classifiers. The best classification performance for seven pitches was obtained using IC and multiclass Support Vector Machine with an average accuracy of 35.68±7.47% (max. 50%) and an information transfer rate (ITR) of 0.37±0.22 bits/sec. When grouping the pitches to vary the number of classes (K = 2-6), the ITR was similar across K and feature sets, suggesting the efficiency of DC. This study demonstrates for the first time the feasibility of decoding imagined musical pitch directly from human EEG.'
+date: 2023-05-03
+paperurl: 'https://doi.org/10.1109/TNSRE.2023.3270175'
+citation: 'Chung, M., Kim, T., Jeong, E., et al. (2023). &quot;Decoding imagined musical pitch from human scalp electroencephalograms.&quot; <i>IEEE Transactions on Neural Systems and Rehabilitation Engineering</i>.'
+---
+---
+title: "Rhythm-based assessment and training for children with attention deficit hyperactivity disorder: A feasibility study protocol"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-02-01-rhythm-assessment-adhd
+excerpt: 'Background: The timing-related deficits in individuals with attention deficit hyperactivity disorder (ADHD) contribute to the symptom-related difficulties and cognitive impairments. Current assessment and training measurement only target specific aspects of the timing ability, highlighting the need for more advanced tools to address timing deficits in ADHD. The aim of this study is to develop and validate a rhythm-based assessment and training (RAT) program, which intends to provide a comprehensive understanding of and enhancement to the time-related abilities of children with ADHD, thereby demonstrating its clinical efficacy.
+
+Methods: We will use randomized crossover trials in this study, with participants being randomly assigned to either start with the RAT and then proceed to cognitive training or start with cognitive training and then proceed to the RAT. Both groups will undergo pre- and post- evaluations. The evaluation will be administered immediately before and after the 4-week training period using diagnostic questionnaires, cognitive evaluation tools, and resting electroencephalography (EEG) measurements. Notably, EEG measurements will be conducted concurrently with the RAT evaluations.
+
+Discussion: This study develops and evaluates the feasibility and effectiveness of a RAT while using EEG measurements to elucidate the underlying therapeutic mechanism of auditory rhythm at varying levels of complexity. The study will investigate the potential of RAT as a supplementary or alternative approach for managing ADHD. The multifaceted data collected will yield valuable insights to customize training agendas based on individual developmental stages and prognoses.'
+date: 2023-07-31
+paperurl: 'https://doi.org/10.3389/fneur.2023.1192181'
+citation: 'Shin, H-J., Lee, H., Kang, D., Kim, J. I., & Jeong, E. (2023). &quot;Rhythm-based assessment and training for children with attention deficit hyperactivity disorder: A feasibility study protocol.&quot; <i>Frontiers in Human Neuroscience</i>. 17:1190736.'
+---
+---
+title: "Virtual reality-based music attention training for acquired brain injury: A protocol for randomized cross-over trial"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-01-01-vr-music-protocol-brain-injury
+excerpt: 'Attention training is the primary step in the rehabilitation for patients with acquired brain injury (ABI). While active music performance has been reported to aid neural and functional recovery, its efficacy for patients with ABI remains uncertain due to methodological concerns. The purpose of the study is to develop a virtual reality-based music attention training (VR-MAT), which utilizes a visually guided, bilateral drumming in an immersive environment to train attention and executive functions. We also aims to examine the feasibility and effectiveness of the VR-MAT with a small sample size of participants (3–60 months after ABI, N = 20 approximately). Participants will be randomly assigned to either a waitlist control or music group, in which VR-MAT will take place five times weekly over 4 weeks (randomized crossover design). The evaluation of VR-MAT performance will include accuracy and response time in music responses. Neurocognitive outcome measures will be administered to quantify pre-post changes in attention, working memory, and executive functions. Additionally, functional near-infrared spectroscopy will be employed to explore the relationships between musical behavior, neurocognitive function, and neurophysiological responses.'
+date: 2023-08-08
+paperurl: 'https://doi.org/10.3389/fneur.2023.1192181'
+citation: 'Shin, J-H, & Jeong, E. (2023). &quot;Virtual reality-based music attention training for acquired brain injury: A protocol for randomized cross-over trial.&quot; <i>Frontiers in Neurology</i>. 14:1192181.'
+---
