@@ -229,7 +229,7 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
- people:
+  people:
     output: true
     permalink: /:collection/:path/
 
