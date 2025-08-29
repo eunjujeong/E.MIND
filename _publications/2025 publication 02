@@ -3,10 +3,7 @@ title: "Influence of vehicle expertise on acceleration profile preferences in el
 collection: publications
 category: manuscripts
 permalink: /publication/2025-02-01-vehicle-expertise-acceleration
-excerpt: 'This study investigates how vehicle expertise influences acceleration profile preferences in electric vehicles.'
-date: 2025-02-01
-venue: 'PLOS ONE'
+excerpt: 'This study examines how professional expertise influences acceleration profile preferences by comparing evaluations from development experts in internal combustion engine vehicles (ICEVs) and electric vehicles (EVs). Subjective evaluations were conducted under light and middle tip-in acceleration conditions, where participants assessed five distinct acceleration profiles defined by maximum jerk, acceleration gradient, and jerk kurtosis. Results indicated that ICEV experts preferred profiles emphasizing stability and smooth transitions, while EV experts showed more balanced preferences for responsiveness and smoothness. Under light tip-in acceleration, ICEV experts demonstrated strong negative correlations between subjective preference and maximum jerk (r = −0.85) and jerk kurtosis (r = −0.75), indicating aversion to sharp transient dynamics. EV experts showed weaker correlations (r = −0.26 and r = −0.63, respectively), suggesting more flexible perception of these characteristics. Under middle tip-in acceleration, EV experts displayed strong negative correlations with maximum jerk (r = −0.82) and jerk kurtosis (r = −0.89), while ICEV experts exhibited negligible or weak associations with these parameters. These findings demonstrate that professional background significantly influences acceleration profile preferences, with ICEV experts valuing traditional driving dynamics and EV experts accepting more responsive characteristics typical of electric drivetrains. The results offer practical guidelines to improve user satisfaction and facilitate a smoother transition from ICEVs to EVs by aligning vehicle drivability characteristics with different user expectations based on their professional expertise and driving experience.'
+date: 2025-06-04
 citation: 'Kim S, Yang J, Jeong E. (2025). &quot;Influence of vehicle expertise on acceleration profile preferences in electric vehicles.&quot; <i>PLOS ONE</i>. 20(6): e0325331.'
 ---
-
-This research explored the relationship between driver expertise levels and their preferences for acceleration profiles in electric vehicles.
