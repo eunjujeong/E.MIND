@@ -1,0 +1,10 @@
+---
+title: "Decoding imagined musical pitch from human scalp electroencephalograms"
+collection: publications
+category: manuscripts
+permalink: /publication/2023-03-01-musical-pitch-eeg-decoding
+excerpt: 'Brain-computer interfaces (BCIs) can restore impaired cognitive functions in people with neurological disorders such as stroke. Musical ability is a cognitive function that is correlated with non-musical cognitive functions, and restoring it can enhance other cognitive functions. Pitch sense is the most relevant function to musical ability according to previous studies of amusia, and thus decoding pitch information is crucial for BCIs to be able to restore musical ability. This study evaluated the feasibility of decoding pitch imagery information directly from human electroencephalography (EEG). Twenty participants performed a random imagery task with seven musical pitches (C4-B4). We used two approaches to explore EEG features of pitch imagery: multiband spectral power at individual channels (IC) and differences between bilaterally symmetric channels (DC). The selected spectral power features revealed remarkable contrasts between left and right hemispheres, low- (< 13 Hz) and high-frequency ( 13 Hz) bands, and frontal and parietal areas. We classified two EEG feature sets, IC and DC, into seven pitch classes using five types of classifiers. The best classification performance for seven pitches was obtained using IC and multiclass Support Vector Machine with an average accuracy of 35.68±7.47% (max. 50%) and an information transfer rate (ITR) of 0.37±0.22 bits/sec. When grouping the pitches to vary the number of classes (K = 2-6), the ITR was similar across K and feature sets, suggesting the efficiency of DC. This study demonstrates for the first time the feasibility of decoding imagined musical pitch directly from human EEG.'
+date: 2023-05-03
+paperurl: 'https://doi.org/10.1109/TNSRE.2023.3270175'
+citation: 'Chung, M., Kim, T., Jeong, E., et al. (2023). &quot;Decoding imagined musical pitch from human scalp electroencephalograms.&quot; <i>IEEE Transactions on Neural Systems and Rehabilitation Engineering</i>.'
+---
