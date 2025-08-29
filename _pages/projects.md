@@ -17,6 +17,18 @@ Current Projects
 
 Our research team focuses on utilizing music as a core medium for overcoming insomnia, paying attention to the therapeutic value of music as a psychological and emotional intervention that encompasses both universality and individuality, as well as the effect of inducing physiological responses based on music-biosignal synchronization. Through this research, we plan to develop a digital sleeponomics service prototype that enables psychological and emotional care before and after sleep for insomnia patients and real-time adaptive intervention during sleep. This research is expected to derive personalized insomnia solutions and expand to digital wellness and digital therapeutics (DTx) fields, contributing to improving national sleep health.
 
+
+**Development of Personalized Noise Mitigation Technology and Service Based on Noise Simulation**
+**개인공간 소음 문제 해결을 위한 소음 시뮬레이션기반 개인 맞춤형 소음 완화 기술 및 서비스 개발**
+- **Funding Agency**: Korea Evaluation Institute of Industrial Technology (한국산업기술기획평가원)
+- **Period**: 2023.4 ~ 2025.12
+
+This project aims to develop a sound masking scape system for noise stress mitigation in personal spaces encompassing both residential and work environments. To achieve this, we perform user noise sensitivity and stress multidimensional evaluation for typification, develop ambiance sound sources for noise masking, and create soundscape sources that meet the usage purposes specific to spatial characteristics. Based on this, we will ultimately develop a personalized noise management service and verify the effectiveness of noise stress reduction.
+
+
+
+Completed Projects
+======
 **Development and Validation of Multisensory Sleep Solution in Vehicle**
 **멀티센서리 기술을 활용한 차량 환경에서의 숙면 테라피 솔루션 개발**
 - **Funding Agency**: Hyundai Motors (현대자동차)
@@ -28,13 +40,6 @@ The purpose of this research is to develop sleep induction technology utilizing 
 
 The music-based content and technology developed through this research will optimize the in-vehicle sleep environment, allowing users to experience effective and high-quality sleep even during long-distance travel or traffic congestion. Furthermore, it can be utilized as an innovative digital healthcare solution that can enhance rest and sleep in various environments.
 
-**Development of Personalized Noise Mitigation Technology and Service Based on Noise Simulation**
-**개인공간 소음 문제 해결을 위한 소음 시뮬레이션기반 개인 맞춤형 소음 완화 기술 및 서비스 개발**
-- **Funding Agency**: Korea Evaluation Institute of Industrial Technology (한국산업기술기획평가원)
-- **Period**: 2023.4 ~ 2025.12
-
-This project aims to develop a sound masking scape system for noise stress mitigation in personal spaces encompassing both residential and work environments. To achieve this, we perform user noise sensitivity and stress multidimensional evaluation for typification, develop ambiance sound sources for noise masking, and create soundscape sources that meet the usage purposes specific to spatial characteristics. Based on this, we will ultimately develop a personalized noise management service and verify the effectiveness of noise stress reduction.
-
 **Development and Validation of Immersive Music-based Neurocognitive Training for Mild Cognitive Impairments**
 **경도인지장애를 위한 가상현실 기반 음악-신경 인지재활 콘텐츠 개발 및 임상효과 검증**
 - **Funding Agency**: Ewha Womans University New Faculty Support Program (이화여대 신임교원지원사업)
@@ -43,9 +48,6 @@ This project aims to develop a sound masking scape system for noise stress mitig
 Mild Cognitive Impairment (MCI) is an important intermediate stage that may progress to Alzheimer's disease, making early screening and intervention crucial. Recent research has shown that virtual reality-based music training is effective in enhancing cognitive and motor functions, but there is currently a lack of systematic music-based training protocols that match MCI subtypes.
 
 Therefore, the purpose of this research is to develop and validate the effects of a music-based neural cognitive rehabilitation program using virtual reality for MCI patients. Virtual reality has the advantage of enabling MCI patients to perform home-based rehabilitation training, making it more accessible and widespread than existing rehabilitation methods. This represents an innovative approach that can complement or replace existing rehabilitation methods, improving the quality of life for mild cognitive impairment patients and contributing to long-term health maintenance.
-
-Completed Projects
-======
 
 **Development of Soundscape Contents for Everywhere, Everyone and Every Moment**
 **사용자 환경, 개인 성향별 음원 구축을 위한 사운드 스케이프 음악 컨텐츠 개발**
