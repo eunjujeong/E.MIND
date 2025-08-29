@@ -232,6 +232,9 @@ collections:
   people:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # These settings control how pages and collections are included in the site
 defaults:
