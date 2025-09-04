@@ -1,149 +1,167 @@
 ---
-layout: archive
-title: "People"
-permalink: /people/
-author_profile: true
+layout: default
 ---
 
-{% assign directors = site.people | where: "category", "director" %}
-{% assign researchers = site.people | where: "category", "researcher" %}
-{% assign students = site.people | where: "category", "student" %}
-
-{% if directors.size > 0 %}
-<h2>Director</h2>
-<div class="people-grid">
-  {% for person in directors %}
-   <div class="person-card">
-  <div class="person-content">
-    {% if person.avatar %}
-      <div class="person-avatar-container">
-        <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}" class="person-avatar">
-      </div>
-    {% endif %}
-    <div class="person-info">
-      <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
-        {% if person.excerpt %}
-          <p class="person-excerpt">{{ person.excerpt }}</p>
-        {% endif %}
-        {% if person.email %}
-          <p class="person-email">
-            <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-          </p>
-        {% endif %}
-      </div>
-    </div>
-  {% endfor %}
-</div>
-{% endif %}
-
-{% if researchers.size > 0 %}
-<h2>Researchers</h2>
-<div class="people-grid">
-  {% for person in researchers %}
-    <div class="person-card">
-      {% if person.avatar %}
-        <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}" class="person-avatar">
+<div class="people-profile">
+  <div class="people-header">
+    <div class="people-avatar-section">
+      {% if page.avatar %}
+        <div class="people-avatar">
+          <img src="{{ page.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ page.title }}">
+        </div>
       {% endif %}
-      <div class="person-info">
-        <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
-        {% if person.excerpt %}
-          <p class="person-excerpt">{{ person.excerpt }}</p>
-        {% endif %}
-        {% if person.email %}
-          <p class="person-email">
-            <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-          </p>
-        {% endif %}
-      </div>
     </div>
-  {% endfor %}
-</div>
-{% endif %}
-
-{% if students.size > 0 %}
-<h2>Students</h2>
-<div class="people-grid">
-  {% for person in students %}
-    <div class="person-card">
-      {% if person.avatar %}
-        <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}" class="person-avatar">
+    
+    <div class="people-info-section">
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}
+        <p class="people-title">{{ page.excerpt }}</p>
       {% endif %}
-      <div class="person-info">
-        <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
-        {% if person.excerpt %}
-          <p class="person-excerpt">{{ person.excerpt }}</p>
-        {% endif %}
-        {% if person.email %}
-          <p class="person-email">
-            <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-          </p>
-        {% endif %}
-      </div>
+      {% if page.email %}
+        <p class="people-email">
+          <i class="fas fa-envelope"></i> 
+          <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+        </p>
+      {% endif %}
+      
+      {% if page.research_interests %}
+        <div class="research-interests">
+          <h3>Research Interests</h3>
+          <ul>
+            {% for interest in page.research_interests %}
+              <li>{{ interest }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if page.education %}
+        <div class="education">
+          <h3>Education</h3>
+          <ul>
+            {% for edu in page.education %}
+              <li>{{ edu }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
     </div>
-  {% endfor %}
+  </div>
+
+  <div class="people-content">
+    {{ content }}
+  </div>
 </div>
-{% endif %}
 
 <style>
-.people-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 20px 0 40px 0;
-}
-
-.person-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.people-profile {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
 }
 
-.person-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.people-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #eee;
 }
 
-.person-avatar {
-  width: 120px;
-  height: 120px;
+.people-avatar-section {
+  flex-shrink: 0;
+}
+
+.people-avatar img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid #f0f0f0;
+}
+
+.people-info-section {
+  flex: 1;
+}
+
+.people-info-section h1 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 2.2em;
+}
+
+.people-title {
+  font-size: 1.2em;
+  color: #666;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+.people-email {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+.people-email a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.people-email a:hover {
+  text-decoration: underline;
+}
+
+.research-interests, .education {
+  margin: 25px 0;
+}
+
+.research-interests h3, .education h3 {
+  color: #333;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.research-interests ul, .education ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.research-interests li, .education li {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.people-content {
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin-top: 30px;
+}
+
+.people-content h2 {
+  color: #333;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 5px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.person-info h3 {
-  margin: 10px 0;
-}
-
-.person-info h3 a {
-  text-decoration: none;
-  color: #333;
-}
-
-.person-info h3 a:hover {
-  color: #0066cc;
-}
-
-.person-excerpt {
-  color: #666;
-  font-size: 0.9em;
-  line-height: 1.4;
-  margin: 10px 0;
-}
-
-.person-email {
-  font-size: 0.9em;
-}
-
-.person-email a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
 @media (max-width: 768px) {
-  .people-grid {
-    grid-template-columns: 1fr;
+  .people-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .people-avatar img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .people-info-section h1 {
+    font-size: 1.8em;
   }
 }
 </style>
