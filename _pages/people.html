@@ -13,12 +13,15 @@ author_profile: true
 <h2>Director</h2>
 <div class="people-grid">
   {% for person in directors %}
-    <div class="person-card">
-      {% if person.avatar %}
+   <div class="person-card">
+  <div class="person-content">
+    {% if person.avatar %}
+      <div class="person-avatar-container">
         <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}" class="person-avatar">
-      {% endif %}
-      <div class="person-info">
-        <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
+      </div>
+    {% endif %}
+    <div class="person-info">
+      <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
         {% if person.excerpt %}
           <p class="person-excerpt">{{ person.excerpt }}</p>
         {% endif %}
