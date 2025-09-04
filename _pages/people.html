@@ -12,18 +12,17 @@ author_profile: true
 {% if directors.size > 0 %}
 <h2>Director</h2>
 {% for person in directors %}
+<!-- Director는 1단계: 상세 정보 바로 표시 -->
 <div class="person-detailed-card">
   <div class="person-detailed-content">
-    <!-- 왼쪽: 사진 -->
     <div class="person-detailed-avatar">
       {% if person.avatar %}
         <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}">
       {% endif %}
     </div>
     
-    <!-- 오른쪽: 정보 -->
     <div class="person-detailed-info">
-      <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
+      <h3>{{ person.title }}</h3>
       {% if person.excerpt %}
         <p class="person-position">{{ person.excerpt }}</p>
       {% endif %}
@@ -57,7 +56,6 @@ author_profile: true
     </div>
   </div>
   
-  <!-- 본문 내용 -->
   {% if person.content and person.content != "" %}
     <div class="person-content-section">
       {{ person.content }}
@@ -69,115 +67,64 @@ author_profile: true
 
 {% if researchers.size > 0 %}
 <h2>Researchers</h2>
-{% for person in researchers %}
-<div class="person-detailed-card">
-  <div class="person-detailed-content">
-    <div class="person-detailed-avatar">
-      {% if person.avatar %}
-        <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}">
-      {% endif %}
-    </div>
-    
-    <div class="person-detailed-info">
-      <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
-      {% if person.excerpt %}
-        <p class="person-position">{{ person.excerpt }}</p>
-      {% endif %}
-      {% if person.email %}
-        <p class="person-email">
-          <strong>Email:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-        </p>
-      {% endif %}
-      
-      {% if person.research_interests %}
-        <div class="research-section">
-          <h4>Research Interests</h4>
-          <ul>
-          {% for interest in person.research_interests %}
-            <li>{{ interest }}</li>
-          {% endfor %}
-          </ul>
+<div class="people-grid">
+  {% for person in researchers %}
+  <!-- Researchers는 2단계: 카드 → 클릭 → 상세 페이지 -->
+    <div class="person-card">
+      <div class="person-content">
+        {% if person.avatar %}
+          <div class="person-avatar-container">
+            <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}" class="person-avatar">
+          </div>
+        {% endif %}
+        <div class="person-info">
+          <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
+          {% if person.excerpt %}
+            <p class="person-excerpt">{{ person.excerpt }}</p>
+          {% endif %}
+          {% if person.email %}
+            <p class="person-email">
+              <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+            </p>
+          {% endif %}
         </div>
-      {% endif %}
-
-      {% if person.education %}
-        <div class="education-section">
-          <h4>Education</h4>
-          <ul>
-          {% for edu in person.education %}
-            <li>{{ edu }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
+      </div>
     </div>
-  </div>
-  
-  {% if person.content and person.content != "" %}
-    <div class="person-content-section">
-      {{ person.content }}
-    </div>
-  {% endif %}
+  {% endfor %}
 </div>
-{% endfor %}
 {% endif %}
 
 {% if students.size > 0 %}
 <h2>Students</h2>
-{% for person in students %}
-<div class="person-detailed-card">
-  <div class="person-detailed-content">
-    <div class="person-detailed-avatar">
-      {% if person.avatar %}
-        <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}">
-      {% endif %}
-    </div>
-    
-    <div class="person-detailed-info">
-      <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
-      {% if person.excerpt %}
-        <p class="person-position">{{ person.excerpt }}</p>
-      {% endif %}
-      {% if person.email %}
-        <p class="person-email">
-          <strong>Email:</strong> <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-        </p>
-      {% endif %}
-      
-      {% if person.research_interests %}
-        <div class="research-section">
-          <h4>Research Interests</h4>
-          <ul>
-          {% for interest in person.research_interests %}
-            <li>{{ interest }}</li>
-          {% endfor %}
-          </ul>
+<div class="people-grid">
+  {% for person in students %}
+  <!-- Students는 2단계: 카드 → 클릭 → 상세 페이지 -->
+    <div class="person-card">
+      <div class="person-content">
+        {% if person.avatar %}
+          <div class="person-avatar-container">
+            <img src="{{ person.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ person.title }}" class="person-avatar">
+          </div>
+        {% endif %}
+        <div class="person-info">
+          <h3><a href="{{ person.url | relative_url }}">{{ person.title }}</a></h3>
+          {% if person.excerpt %}
+            <p class="person-excerpt">{{ person.excerpt }}</p>
+          {% endif %}
+          {% if person.email %}
+            <p class="person-email">
+              <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+            </p>
+          {% endif %}
         </div>
-      {% endif %}
-
-      {% if person.education %}
-        <div class="education-section">
-          <h4>Education</h4>
-          <ul>
-          {% for edu in person.education %}
-            <li>{{ edu }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
+      </div>
     </div>
-  </div>
-  
-  {% if person.content and person.content != "" %}
-    <div class="person-content-section">
-      {{ person.content }}
-    </div>
-  {% endif %}
+  {% endfor %}
 </div>
-{% endfor %}
 {% endif %}
 
 <style>
+/* Director 상세 카드 스타일 */
 .person-detailed-card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -213,15 +160,7 @@ author_profile: true
 .person-detailed-info h3 {
   margin: 0 0 15px 0;
   font-size: 1.8em;
-}
-
-.person-detailed-info h3 a {
-  text-decoration: none;
   color: #333;
-}
-
-.person-detailed-info h3 a:hover {
-  color: #0066cc;
 }
 
 .person-position {
@@ -276,6 +215,75 @@ author_profile: true
   margin: 20px 0 15px 0;
 }
 
+/* Students/Researchers 카드 그리드 스타일 */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0 40px 0;
+}
+
+.person-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  background: white;
+}
+
+.person-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.person-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.person-avatar-container {
+  flex-shrink: 0;
+}
+
+.person-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.person-info {
+  flex: 1;
+  text-align: left;
+}
+
+.person-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+}
+
+.person-info h3 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.person-info h3 a:hover {
+  color: #0066cc;
+}
+
+.person-excerpt {
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.3;
+  margin: 5px 0;
+}
+
+.person-info .person-email {
+  font-size: 0.9em;
+  margin: 8px 0 0 0;
+}
+
+/* 반응형 */
 @media (max-width: 768px) {
   .person-detailed-content {
     flex-direction: column;
@@ -286,11 +294,25 @@ author_profile: true
   .person-detailed-avatar img {
     width: 150px;
     height: 150px;
-    border-radius: 8px;
   }
   
   .person-detailed-info h3 {
     font-size: 1.5em;
+  }
+  
+  .people-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .person-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .person-avatar {
+    width: 100px;
+    height: 100px;
   }
 }
 </style>
