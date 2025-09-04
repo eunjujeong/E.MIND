@@ -22,10 +22,9 @@ repository               : "eunjujeong/E.MIND"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Eunju Jeong"
+  avatar           : "logo.png"
+  name             : "E.MIND"
   pronouns         : # example: "she/her"  
-  bio              : "Professor & Director, E-MIND Lab"
   location         : "Seoul, Republic of Korea"
   employer         : "Ewha Womans University"
   uri              : # URL
