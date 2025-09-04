@@ -1,20 +1,20 @@
 ---
 layout: archive
 title: "People"
-permalink: /members/
+permalink: /people/
 author_profile: true
 ---
 
 <h2>Director</h2>
-{% for member in site.members %}
-  {% if member.category == "director" %}
+{% for person in site.people %}
+  {% if person.category == "director" %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
 <h2>Members</h2>
-{% for member in site.members %}
-  {% if member.category == "member" %}
+{% for person in site.people %}
+  {% if person.category == "member" %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
