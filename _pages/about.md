@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Ewha Music Intelligence Neuroscience Design Lab"
+title: "Ewha Music Intelligence Neuroscience Design Lab<br>"
 author_profile: true
 redirect_from: 
   - /about/
