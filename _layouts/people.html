@@ -9,13 +9,9 @@ layout: default
     <!-- 왼쪽: 사진 -->
     <div style="flex-shrink: 0;">
       {% if page.avatar %}
-        <img src="{{ '/images/' | append: page.avatar | relative_url }}" 
+        <img src="{{ page.avatar | prepend: '/images/' | prepend: site.baseurl }}" 
              alt="{{ page.title }}" 
              style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid #f0f0f0;">
-      {% else %}
-        <div style="width: 200px; height: 200px; border-radius: 50%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #999;">
-          No Image
-        </div>
       {% endif %}
     </div>
     
@@ -66,16 +62,6 @@ layout: default
 </div>
 
 <style>
-/* 본문 내용의 제목 스타일링 */
-.content h2 {
-  color: #333;
-  border-bottom: 2px solid #0066cc;
-  padding-bottom: 5px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-/* 모바일 반응형 */
 @media (max-width: 768px) {
   div[style*="display: flex"] {
     flex-direction: column !important;
@@ -83,7 +69,7 @@ layout: default
     text-align: center !important;
   }
   
-  img, div[style*="width: 200px"] {
+  img {
     width: 150px !important;
     height: 150px !important;
   }
