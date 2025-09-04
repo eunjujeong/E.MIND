@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-avatar                   : "logo.png"
+title                    : "E-MIND Lab"
 title_separator          : "-"
 name                     : &name "Eunju Jeong"
 description              : &description "E.MIND (Ewha Music Intelligence Neuroscience Design Lab) conducts fundamental and applied research based on therapeutic principles and practices of music. Our mission is to develop and disseminate face-to-face and non-face-to-face contents, system algorithms, and other outcomes for Everywhere, Everyone, Everytime music therapy services through the convergence of music's therapeutic efficacy and technology. Currently, we are conducting research in collaboration with government agencies, local governments, public research institutions, and both large and small enterprises including future mobility digital healthcare system development, smart soundscape system development for pleasant acoustic environments, and digital therapeutics development and validation for motor and cognitive rehabilitation."
@@ -22,7 +22,7 @@ repository               : "eunjujeong/E.MIND"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  title            : "E. M I N D LAB"
+  name             : "E. M I N D LAB"
   pronouns         : # example: "she/her"  
   location         : "Seoul, Republic of Korea"
   employer         : "Ewha Womans University"
