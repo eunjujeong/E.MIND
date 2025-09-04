@@ -11,7 +11,7 @@ main:
     url: /about/
     
   - title: "People"
-    url: /members/
+    url: /people/
     
   - title: "Projects"
     url: /projects/
