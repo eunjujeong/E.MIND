@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "People"
+permalink: /people/
+author_profile: true
+---
+
+<p>총 {{ site.people.size }}명</p>
+
+{% for person in site.people %}
+  <div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+    <h3><a href="{{ person.url }}">{{ person.title }}</a></h3>
+    <p>{{ person.excerpt }}</p>
+    <p>Email: {{ person.email }}</p>
+  </div>
+{% endfor %}
