@@ -2,125 +2,94 @@
 layout: default
 ---
 
-<div class="people-profile">
-  <header class="people-header">
-    {% if page.avatar %}
-      <div class="people-avatar">
-        <img src="{{ page.avatar | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ page.title }}">
-      </div>
-    {% endif %}
+<div style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+  
+  <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 30px;">
     
-    <div class="people-info">
-      <h1>{{ page.title }}</h1>
-      {% if page.excerpt %}
-        <p class="people-title">{{ page.excerpt }}</p>
+    <!-- 왼쪽: 사진 -->
+    <div style="flex-shrink: 0;">
+      {% if page.avatar %}
+        <img src="{{ '/images/' | append: page.avatar | relative_url }}" 
+             alt="{{ page.title }}" 
+             style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid #f0f0f0;">
+      {% else %}
+        <div style="width: 200px; height: 200px; border-radius: 50%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #999;">
+          No Image
+        </div>
       {% endif %}
+    </div>
+    
+    <!-- 오른쪽: 정보 -->
+    <div style="flex: 1;">
+      <h1 style="margin: 0 0 15px 0; font-size: 2.2em; color: #333;">{{ page.title }}</h1>
+      
+      {% if page.excerpt %}
+        <p style="font-size: 1.2em; color: #666; margin: 15px 0; line-height: 1.4;">{{ page.excerpt }}</p>
+      {% endif %}
+      
       {% if page.email %}
-        <p class="people-email">
-          <i class="fas fa-envelope"></i> 
-          <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+        <p style="margin: 15px 0; font-size: 1.1em;">
+          <strong>Email:</strong> <a href="mailto:{{ page.email }}" style="color: #0066cc; text-decoration: none;">{{ page.email }}</a>
         </p>
       {% endif %}
-    </div>
-  </header>
+      
+      {% if page.research_interests %}
+        <div style="margin: 25px 0;">
+          <h3 style="color: #333; border-bottom: 2px solid #0066cc; padding-bottom: 5px; margin-bottom: 10px;">Research Interests</h3>
+          <ul style="margin: 0; padding-left: 20px;">
+          {% for interest in page.research_interests %}
+            <li style="margin: 5px 0; line-height: 1.4;">{{ interest }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
 
-  <div class="people-content">
+      {% if page.education %}
+        <div style="margin: 25px 0;">
+          <h3 style="color: #333; border-bottom: 2px solid #0066cc; padding-bottom: 5px; margin-bottom: 10px;">Education</h3>
+          <ul style="margin: 0; padding-left: 20px;">
+          {% for edu in page.education %}
+            <li style="margin: 5px 0; line-height: 1.4;">{{ edu }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+    
+  </div>
+  
+  <!-- 본문 내용 -->
+  <div style="line-height: 1.8; font-size: 1.1em;">
     {{ content }}
   </div>
-
-  {% if page.research_interests %}
-    <div class="research-interests">
-      <h3>Research Interests</h3>
-      <ul>
-        {% for interest in page.research_interests %}
-          <li>{{ interest }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-
-  {% if page.education %}
-    <div class="education">
-      <h3>Education</h3>
-      <ul>
-        {% for edu in page.education %}
-          <li>{{ edu }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
+  
 </div>
 
 <style>
-.people-profile {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.people-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #eee;
-}
-
-.people-avatar {
-  margin-right: 30px;
-}
-
-.people-avatar img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.people-info h1 {
-  margin: 0 0 10px 0;
+/* 본문 내용의 제목 스타일링 */
+.content h2 {
   color: #333;
-}
-
-.people-title {
-  font-size: 1.1em;
-  color: #666;
-  margin: 10px 0;
-  line-height: 1.4;
-}
-
-.people-email {
-  margin: 10px 0;
-}
-
-.people-email a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-.people-content {
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.research-interests, .education {
-  margin-bottom: 20px;
-}
-
-.research-interests h3, .education h3 {
-  color: #333;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #0066cc;
   padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
+/* 모바일 반응형 */
 @media (max-width: 768px) {
-  .people-header {
-    flex-direction: column;
-    text-align: center;
+  div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
   }
   
-  .people-avatar {
-    margin: 0 0 20px 0;
+  img, div[style*="width: 200px"] {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  h1 {
+    font-size: 1.8em !important;
   }
 }
 </style>
