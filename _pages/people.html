@@ -6,8 +6,8 @@ author_profile: true
 ---
 
 <h2>Director</h2>
+<p>Test: {{ site.people.size }} people found</p>
+
 {% for person in site.people %}
-  {% if person.category == "director" %}
-    {% include archive-single.html %}
-  {% endif %}
+  <p>Found: {{ person.title }} - {{ person.category }}</p>
 {% endfor %}
