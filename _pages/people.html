@@ -11,10 +11,3 @@ author_profile: true
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
-
-<h2>Members</h2>
-{% for person in site.people %}
-  {% if person.category == "member" %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
