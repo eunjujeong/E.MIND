@@ -16,3 +16,4 @@ education:
   - "Ph.D. in Music Education with Music Therapy Emphasis, University of Miami"
   - "M.ED. in Education, Ewha Womans University" 
   - "B.A. in Music Performance, Seoul National University"
+---
