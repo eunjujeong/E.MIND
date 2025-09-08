@@ -7,7 +7,3 @@ excerpt: 'Ph.D. Student,<br> Department of Music Therapy,<br> Ewha Womans Univer
 email: "minjung@ewha.ac.kr"
 avatar: "kim.jpg"
 research interests:
-  - "Music-based Digital Therapeutics"
-  - "AI-assisted Music Therapy"
-  - "Neurological Rehabilitation"
-  - "Human-Computer Interaction in Music"
